@@ -1,11 +1,10 @@
 import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 
-import { useTheme } from 'styled-components';
-
 import * as S from './PaginationControls.styles';
 import { PaginationControlsProps } from './PaginationControls.types';
 import Icon from '@react-native-vector-icons/ant-design';
+import { theme } from '../../theme/theme';
 
 const PaginationControls = ({
   currentPage,
@@ -14,8 +13,6 @@ const PaginationControls = ({
   itemsPerPage,
   onChangePage,
 }: PaginationControlsProps) => {
-  const theme = useTheme();
-
   const handlePageChange = (newPage: number) => {
     if (newPage >= 1 && newPage <= Math.ceil(totalItems / itemsPerPage)) {
       setCurrentPage(newPage);

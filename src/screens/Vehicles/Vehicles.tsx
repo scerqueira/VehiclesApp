@@ -96,8 +96,6 @@ const Vehicles: React.FC = () => {
     <VehicleRow vehicle={item} onPress={() => navigation.navigate('VehicleDetails', { id: item.id })} />
   );
 
-  console.log('Filtered Data:', filteredData);
-
   return (
     <S.MainContainer>
       <S.FiltersContainer>
