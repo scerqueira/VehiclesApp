@@ -10,6 +10,7 @@ const SwitchButton = ({ label, value, onChange }: SwitchButtonProps) => {
     <S.SwitchContainer>
       <S.Label>{label}</S.Label>
       <Switch
+        testID="switch-button"
         trackColor={{ false: theme.colors.surface.LIGHT_GRAY, true: theme.colors.PRIMARY_500 }}
         thumbColor={value ? theme.colors.SECONDARY_500 : theme.colors.SECONDARY_50}
         ios_backgroundColor={theme.colors.PRIMARY_50}
