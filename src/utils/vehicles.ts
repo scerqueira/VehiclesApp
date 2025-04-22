@@ -12,7 +12,6 @@ export const getVehiclePhotoUrl = (make: Vehicle['make']): string | null => {
       return 'https://banner2.cleanpng.com/20180406/zqe/avghehgyy.webp';
     case 'Honda':
       return 'https://banner2.cleanpng.com/lnd/20241121/jl/70e7693a1fffa89f38dd8c07d771db.webp';
-
     case 'Mercedes-Benz':
       return 'https://banner2.cleanpng.com/lnd/20241214/hk/ae2bae286f36d991b74497741b38d1.webp';
     case 'Toyota':

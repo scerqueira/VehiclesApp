@@ -7,7 +7,8 @@ import { Vehicles } from './src/screens/Vehicles';
 import VehiclesDetails from './src/screens/VehicleDetails';
 import type { RootStackParamList } from './src/types/navigation';
 
-import 'styled-components';
+import 'styled-components/native';
+import './src/types/styled';
 
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from './src/theme/theme';

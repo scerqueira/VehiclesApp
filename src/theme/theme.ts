@@ -1,4 +1,3 @@
-import { DefaultTheme } from '@react-navigation/native';
 import { Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window');
@@ -10,9 +9,7 @@ export const scale = (size: number, heightBased?: boolean): number =>
   heightBased ? size * heightScale : size * widthScale;
 
 export const theme = {
-  ...DefaultTheme,
   colors: {
-    ...DefaultTheme.colors,
     PRIMARY_50: '#D6E2F6',
     PRIMARY_100: '#A9C4E5',
     PRIMARY_200: '#7D9FDA',
@@ -76,4 +73,4 @@ export const theme = {
   lineHeight: {
     body: scale(20),
   },
-} as const;
+};
