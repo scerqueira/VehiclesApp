@@ -99,8 +99,20 @@ const Vehicles: React.FC = () => {
   return (
     <S.MainContainer>
       <S.FiltersContainer>
-        <LabelInput label="Make" placeholder="Filter by Make" value={makeFilter} onChange={setMakeFilter} />
-        <LabelInput label="Model" placeholder="Filter by Model" value={modelFilter} onChange={setModelFilter} />
+        <LabelInput
+          testID="input-make"
+          label="Make"
+          placeholder="Filter by Make"
+          value={makeFilter}
+          onChange={setMakeFilter}
+        />
+        <LabelInput
+          testID="input-model"
+          label="Model"
+          placeholder="Filter by Model"
+          value={modelFilter}
+          onChange={setModelFilter}
+        />
         <RangeFilter
           label="Bid range"
           minValue={minBid}

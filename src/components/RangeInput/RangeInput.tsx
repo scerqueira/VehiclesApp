@@ -7,6 +7,7 @@ const RangeFilter: React.FC<RangeInputProps> = ({ label, minValue, maxValue, onC
     <S.RangeFilterContainer>
       <S.Label>{label}</S.Label>
       <S.Input
+        testID={`input-${label.toLowerCase()}`}
         placeholder="Min"
         keyboardType="numeric"
         value={String(minValue)}
@@ -14,6 +15,7 @@ const RangeFilter: React.FC<RangeInputProps> = ({ label, minValue, maxValue, onC
       />
       <S.Label>to</S.Label>
       <S.Input
+        testID={`input-${label.toLowerCase()}`}
         placeholder="Max"
         keyboardType="numeric"
         value={String(maxValue)}
